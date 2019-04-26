@@ -1,0 +1,84 @@
+<div class="conatiner sc_hide_wrap">
+<div class="ext-header">
+	<img src="https://snakecodder.com/img/frontend/logo.png" / >
+	<br>
+	<h2>HiddenPrice</h2>
+</div>
+<?php 
+$helper = \Magento\Framework\App\ObjectManager::getInstance()->get('SnakeCodder\HiddenPrice\Helper\Data'); 
+
+
+if($helper->isEnable()) { ?>
+
+
+<h2>Extension is Enabled</h2><hr>
+<?php $groups = $helper->_getCustomerGrouptoHide();
+	
+	$groupDef = [ 0 => 'NOT LOGGED IN', 1 => 'General', 2 => 'Wholesale', 3 => 'Retailer'] ;
+	$group_Arr = explode(',',$groups);
+	$SelectedGroup = ['key' => 'value'];
+
+	$len = count($group_Arr);
+
+	//print_r($len);
+
+	$data = "<h2>You Have Selected : </h2>";
+	$i =1 ;
+	foreach ($group_Arr as $key => $value) {
+		if($value != "NULL" ) {
+			$data .= '<span>'.$groupDef[$value] ; 
+		}else{
+			$data .= "None";
+		}
+
+		if($len == 1 || $i == $len){
+			$data .= ' </span>';
+		} 
+		elseif($i == $len - 1){
+			$data .= ' </span> &  ';
+		}
+		else {
+			$data .= ', </span>';
+		}
+		
+		$i++;
+	}
+	$data .= '<hr>';
+echo $data;
+
+	
+
+ ?>
+
+
+
+<?php } elseif (!$helper->isEnable()) { ?>
+	<h2>Extension is Disabled</h2>
+<?php } ?>
+
+</div>
+
+<style type="text/css">
+	.sc_hide_wrap{
+
+		margin: 20px auto;
+		text-align: center;
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+		width: 50vw;
+
+
+	}
+
+	.ext-header{
+		border-bottom: 1px solid dodgerblue;
+
+	}
+
+	.ext-header img {
+		width:263px;
+		height: 108px;
+	}
+</style>
+

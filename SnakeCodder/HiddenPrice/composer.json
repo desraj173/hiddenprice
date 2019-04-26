@@ -1,0 +1,22 @@
+{
+    "name": "snakecodder/module-hiddenprice",
+    "description": "Hide Price For Certain Customer According To Need In Magento 2",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SnakeCodder\\HiddenPrice\\": ""
+        }
+    }
+}
