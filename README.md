@@ -52,6 +52,6 @@ MIT
 
 ### Developer Involved
 
-[![Developer](https://scontent.fudr1-1.fna.fbcdn.net/v/t1.0-9/14291708_1112306778854783_5223227203191457343_n.jpg?_nc_cat=108&_nc_ht=scontent.fudr1-1.fna&oh=ac6cd0859bb9b094d0f18d706af24590&oe=5D3E7027) ](http://desrajdikao.co.nf/)
+[![Developer](https://scontent.fudr1-1.fna.fbcdn.net/v/t1.0-0/p160x160/28783116_1632183933533729_2794874086906035711_n.jpg?_nc_cat=109&_nc_ht=scontent.fudr1-1.fna&oh=1d6f9c633badbbc1aaaf7cb136f0e397&oe=5D7000A3) ](http://desrajdikao.co.nf/)
 
 > ### Des Raj
