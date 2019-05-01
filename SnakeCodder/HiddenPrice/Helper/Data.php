@@ -7,23 +7,12 @@ use Magento\Customer\Model\Session;
 
 class Data extends AbstractHelper
 {
-    // protected $context;
-
-    /*public function __construct(Context $context)
-    {
-        $this->context = $context;
-        parent::__construct($context);
-    }*/
-
- 
-
-    //const XML_CONFIG_HIDE_ADD_TO_CART = 'catalog/available/hide_add_to_cart';
-    //const XML_CONFIG_HIDE_ADD_TO_CART_GROUPS = 'catalog/available/hide_add_to_cart_groups';
     const XML_CONFIG_HIDE_PRICE = 'catalog/available/hide_price';
-    //const XML_CONFIG_HIDE_PRICE = 'hiddenprice/general/status';
+   
     const XML_CONFIG_HIDE_PRICE_GROUPS = 'catalog/available/hide_price_groups';
-    //const XML_CONFIG_HIDE_PRICE_GROUPS = 'hiddenprice/general/enable_for_customer_groups';
-    protected $_session;
+   
+    protected $_session;   
+    
 /** 
   * Initialize Helper 
   * 
